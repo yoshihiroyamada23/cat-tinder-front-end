@@ -1,4 +1,3 @@
-    
 const cats = [
     {
       id: 1,

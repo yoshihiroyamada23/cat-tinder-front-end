@@ -16,7 +16,6 @@ const App = () => {
   console.log(cats)
 return (
   <>
-  
     < Header />
     <Routes>
       <Route path="/" element={<Home />} />
@@ -25,11 +24,9 @@ return (
       <Route path="/catnew" element={<CatNew />} />
       <Route path="/catedit" element={<CatEdit />} />
       <Route path="*" element={<NotFound />} />
-      </Routes>
-      < Footer />
-      
+    </Routes>
+    < Footer />
   </>
 )
-
 }
 export default App
