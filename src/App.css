@@ -1,3 +1,4 @@
+*{background-color: blue;}
 .header{
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 20);
   text-align: center;
@@ -5,9 +6,8 @@
   font-family: monospace;
 }
 .home{
- 
-  color:blue;
-  padding: 20px;  
+  text-align: center;
+  padding: 20px; 
 }
 
 footer{
@@ -15,10 +15,10 @@ footer{
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #333;
+  
   color: #fff;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
 }
 .createcat{
   font-family: cursive  ;
@@ -26,14 +26,14 @@ footer{
 .logo{
   width: 500px;
   height: auto;
-  margin-top: 20px;
-  
-  margin: 10px 500px;
+  /* margin-top: 20px; */
+  text-align: center;
+  /* margin: 10px 500px; */
 }
-body .notfound{
+.body{
   text-align: center;
   font-size: 20px;
-  color:darkred;
+  background-color:darkred;
   font-weight: bold;
   
 }

@@ -3,10 +3,10 @@ import HomeImage from '../Assets/HomeImage.png'
 
 const Home = () => {
 return (
-    <>
-    <h1 className="header">Welcome to Cat Tinder</h1>
+    <div className="home">
+    <h1>Welcome to Cat Tinder</h1>
     <img src={HomeImage} alt ="cat" className="logo"/>
-    </>
+    </div>
 )
 }
 export default Home
