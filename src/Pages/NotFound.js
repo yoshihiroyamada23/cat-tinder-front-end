@@ -2,8 +2,10 @@ import React from "react"
 
 const NotFound = () => {
 return (
-    <h1 style={{color: "darkred"}}>PAGE NOT FOUND</h1>
-    
+    <>
+   
+    <img src="https://cdn2.hubspot.net/hubfs/242200/shutterstock_774749455.jpg" alt="page" className="nopage"/>
+    </>
 )
 
 }

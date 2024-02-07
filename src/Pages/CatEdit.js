@@ -2,7 +2,7 @@ import React from "react"
 
 const CatEdit = () => {
 return (
-    <h1>CatEdit Page</h1>
+    <h1>Edit Your Cat page</h1>
 )
 
 }

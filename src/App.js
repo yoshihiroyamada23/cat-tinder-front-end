@@ -9,12 +9,14 @@ import CatEdit from "./Pages/CatEdit"
 import NotFound from "./Pages/NotFound"
 import mockCats from "./mockCats"
 import { Routes, Route } from "react-router-dom"
+import './App.css';
 
 const App = () => {
   const [cats, setCats] = useState(mockCats)
   console.log(cats)
 return (
   <>
+  
     < Header />
     <Routes>
       <Route path="/" element={<Home />} />
@@ -25,6 +27,7 @@ return (
       <Route path="*" element={<NotFound />} />
       </Routes>
       < Footer />
+      
   </>
 )
 

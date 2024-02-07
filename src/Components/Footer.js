@@ -2,7 +2,9 @@ import React from "react"
 
 const Footer = () => {
 return (
-    <h1 style={{color: "red"}}>Footer Component</h1>
+    <footer>
+    <p id="copyright" class="copyright">©2024 Cat Tinder. All purrs reserved</p>
+    </footer>
 )
 
 }

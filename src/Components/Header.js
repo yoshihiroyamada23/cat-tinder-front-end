@@ -1,13 +1,13 @@
 import React from "react"
 
+
 const Header = () => {
-    const stylings = {
-        color: "blue",
-        fontFamily: "Times New Roman"
-        
-    }
 return (
-    <h1 style={stylings}>Header Component</h1>
+    <div className="header">
+    <h1>Cat Tinder</h1>
+  
+    
+    </div>
 )
 
 }
