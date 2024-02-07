@@ -14,7 +14,7 @@ import './App.css';
 const App = () => {
   const [cats, setCats] = useState(mockCats)
   console.log(cats)
-return (
+  return (
   <>
     < Header />
     <Routes>
