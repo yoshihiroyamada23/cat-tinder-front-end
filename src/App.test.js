@@ -5,7 +5,7 @@ import Kurrin from "./assets/HomeImage.png"
 
 describe("<App />", () => {
   it("renders an image", () => {
-  
+
     render(
       <BrowserRouter>
         <App />
