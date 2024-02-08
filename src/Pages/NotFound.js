@@ -1,12 +1,10 @@
 import React from "react"
-import FooterImage from '../Assets/FooterImage.png'
+import NotFoundError from '../Assets/NotFoundError.png'
 
 const NotFound = () => {
     return (
         <>
-            <footer>
-                <img src={FooterImage} alt="Footer" className="nopage"/>
-         </footer>
+        <img src={NotFoundError} alt="book" className="nopage"/>
         </>
 )
 }
