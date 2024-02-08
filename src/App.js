@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, { useState } from "react"
 import Footer from "./Components/Footer"
 import Header from "./Components/Header"
 import Home from "./Pages/Home"
@@ -15,18 +15,18 @@ const App = () => {
   const [cats, setCats] = useState(mockCats)
   console.log(cats)
   return (
-  <>
-    < Header />
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/catindex" element={<CatIndex />} />
-      <Route path="/catshow" element={<CatShow />} />
-      <Route path="/catnew" element={<CatNew />} />
-      <Route path="/catedit" element={<CatEdit />} />
-      <Route path="*" element={<NotFound />} />
-    </Routes>
-    < Footer />
-  </>
-)
+    <>
+      < Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/catindex" element={<CatIndex />} />
+        <Route path="/catshow" element={<CatShow />} />
+        <Route path="/catnew" element={<CatNew />} />
+        <Route path="/catedit" element={<CatEdit />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+      < Footer />
+    </>
+  )
 }
 export default App
