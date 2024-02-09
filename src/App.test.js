@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, image } from '@testing-library/react';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom'
 import Kurrin from "./assets/HomeImage.png"
@@ -14,3 +14,8 @@ describe("<App />", () => {
     expect(image).toHaveAttribute("src", Kurrin)
   })
 })
+
+
+
+
+
