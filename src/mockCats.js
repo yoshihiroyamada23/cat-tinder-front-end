@@ -29,7 +29,7 @@ const cats = [
         age: 12,
         enjoys: "Watching the Chiefs game",
         image:
-          "https://images.unsplash.com/photo-1592194996308-7b43878e84a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6LCjQoBWtmaSh1gbyZEcZ_m0znTECb2iI9Q&usqp=CAU"
     }
   ]
   export default cats
