@@ -10,7 +10,6 @@ describe("<App />", () => {
         <App />
       </BrowserRouter>
     )
-    screen.logTestingPlaygroundURL()
     const image = screen.getByRole('img')
     expect(image).toHaveAttribute("src", Kurrin)
   })

@@ -9,7 +9,6 @@ describe("<CatNew />", () => {
             <CatNew />
         </BrowserRouter>
       )
-      screen.logTestingPlaygroundURL();
       const catNewName = screen.getByRole("textbox", {name: /name/i})
       expect(catNewName).toBeInTheDocument()
      
@@ -24,6 +23,7 @@ describe("<CatNew />", () => {
         const catNewAge = screen.getByRole('spinbutton')
         expect(catNewAge).toBeInTheDocument()
       })
+
       it("renders what you enjoy", () => {
         render(
           <BrowserRouter>
@@ -33,6 +33,7 @@ describe("<CatNew />", () => {
         const catNewEnjoy = screen.getByPlaceholderText(/what do you enjoy/i)
         expect(catNewEnjoy).toBeInTheDocument()
       })
+      
       it("renders the URL of your picture", () => {
         render(
           <BrowserRouter>
