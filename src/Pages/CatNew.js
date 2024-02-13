@@ -8,9 +8,10 @@ const CatNew = ({createCat}) => {
         enjoys: "",
         image: ""
     })
+
     const navigate = useNavigate()
     const handleChange = (e) => {
-        setCatFormData({...setCatFormData, [e.target.name]: e.target.value})
+        setCatFormData({...createFormData, [e.target.name]: e.target.value})
     }
     const handleSubmit = () => {
         createCat(createFormData)
@@ -24,11 +25,12 @@ const CatNew = ({createCat}) => {
                 <FormGroup>
                     <Label for="name">Enter Your Purry Name</Label>
                     <Input
-                        type="name"
-                        name="namel"
+                        type="text"
+                        name="name"
                         id="name"
                         placeholder="Name"
                         onChange={handleChange}
+                        value={createFormData.name}
                     />
                 </FormGroup>
                 <FormGroup>
@@ -39,26 +41,29 @@ const CatNew = ({createCat}) => {
                         id="examplePassword"
                         placeholder="Age"
                         onChange={handleChange}
+                        value={createFormData.age}
                     />
                 </FormGroup>
                 <FormGroup>
                     <Label for="enjoys">Type What You Like To Do</Label>
                     <Input
-                        type="enjoys"
+                        type="text"
                         name="enjoys"
-                        id="enjoy"
+                        id="enjoys"
                         placeholder="What Do You Enjoy"
                         onChange={handleChange}
+                        value={createFormData.enjoys}
                     />
                 </FormGroup>
                 <FormGroup>
-                    <Label for="enjoys">Enter URL For Your Profile Picture</Label>
+                    <Label for="image">Enter URL For Your Profile Picture</Label>
                     <Input
                         type="text"
                         name="image"
-                        id="Image"
+                        id="image"
                         placeholder="URL Goes Here"
                         onChange={handleChange}
+                        value={createFormData.image}
                     />
                 </FormGroup>
                 <Button onClick={handleSubmit}>Submit</Button>
