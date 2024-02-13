@@ -50,7 +50,7 @@ const CatNew = ({createCat}) => {
                         type="text"
                         name="enjoys"
                         id="enjoys"
-                        placeholder="What Do You Enjoy"
+                        placeholder="minimum characters 10"
                         onChange={handleChange}
                         value={createFormData.enjoys}
                     />
