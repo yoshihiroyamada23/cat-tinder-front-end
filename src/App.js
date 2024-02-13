@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import Footer from "./Components/Footer"
 import Header from "./Components/Header"
 import Home from "./Pages/Home"
@@ -7,15 +7,33 @@ import CatShow from "./Pages/CatShow"
 import CatNew from "./Pages/CatNew"
 import CatEdit from "./Pages/CatEdit"
 import NotFound from "./Pages/NotFound"
-import mockCats from "./mockCats"
 import { Routes, Route } from "react-router-dom"
 import './App.css';
 
 const App = () => {
-  const [cats, setCats] = useState(mockCats)
-  console.log(cats)
-  const createCat = (newCat) =>{
-    console.log(newCat)
+  const [cats, setCats] = useState([])
+
+  useEffect(() => {
+    readCat()
+  }, [])
+
+  const readCat = () => {
+    fetch("http://localhost:3000/cats")
+      .then((response) => response.json(response))
+      .then((payload) => setCats(payload))
+      .catch((errors) => console.log("cat read errors", errors))
+  }
+  const createCat = (cat) => {
+    fetch("http://localhost:3000/cats", {
+      body: JSON.stringify(cat),
+      headers: {
+        "Content-Type": "application/json"
+      },
+      method: "POST"
+    })
+      .then((response) => response.json())
+      .then(() => readCat())
+      .catch((errors) => console.log("Cat create errors:", errors))
   }
   return (
     <>
