@@ -15,6 +15,12 @@
   text-align: center;
   padding: 20px;
 }
+.HomeLogo {
+  width: 100px; 
+  height: auto; 
+  margin-right: 10px;
+  margin-left: 0;
+}
 
 a.nav-link{
   font-size: 30px;
@@ -92,9 +98,25 @@ img.cat-profile-pic{
   max-width: 400px;
   max-height: 400px;
 }
+
+.tagline{
+  color:red;
+  font-size: 40px;
+  font-family: Georgia, serif;
+  text-align: center;
+}
 .match{
   color:red;
-  font-size: 20px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  text-align: left;
+  font-size: 30px;
+  font-family: Georgia, serif;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.EditCat{
+  color:red;
+  font-size: 30px;
+  font-family: Georgia, serif;
+  text-align: center;
+  margin-top: 20px;
 }
